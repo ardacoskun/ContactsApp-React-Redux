@@ -12,9 +12,12 @@ const Form = () => {
 
     if (!name) return false;
 
-    const names = name.split(",");
-    const data = names.map((name) => ({ id: nanoid(), name }));
-    dispatch(addContacts(data));
+    //Add Multiple Contacts
+    // const names = name.split(",");
+    // const data = names.map((name) => ({ id: nanoid(), name }));
+    // dispatch(addContacts(data));
+
+    dispatch(addContact({ id: nanoid(), name }));
     setName("");
   };
 
