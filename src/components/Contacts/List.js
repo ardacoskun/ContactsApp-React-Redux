@@ -8,7 +8,7 @@ const List = () => {
   return (
     <div>
       {contacts.length > 0 &&
-        contacts.map((contact) => <Item contact={contact} />)}
+        contacts.map((contact) => <Item key={contact.id} contact={contact} />)}
     </div>
   );
 };
