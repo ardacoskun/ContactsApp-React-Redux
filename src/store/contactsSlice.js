@@ -8,8 +8,9 @@ export const contactsSlice = createSlice({
   initialState,
   reducers: {
     addContact: contactsAdapter.addOne,
+    addContacts: contactsAdapter.addMany,
   },
 });
 
-export const { addContact } = contactsSlice.actions;
+export const { addContact, addContacts } = contactsSlice.actions;
 export default contactsSlice.reducer;
