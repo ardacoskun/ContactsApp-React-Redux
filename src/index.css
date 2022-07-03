@@ -87,3 +87,8 @@ button {
 .deleteAllBtn:hover {
   text-decoration: underline;
 }
+
+.edit span {
+  margin: 0 10px;
+  cursor: pointer;
+}
