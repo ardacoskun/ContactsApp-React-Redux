@@ -4,11 +4,11 @@ import List from "./List";
 
 const Contacts = () => {
   return (
-    <>
+    <div id="container">
       <h1>Contacts</h1>
       <Form />
       <List />
-    </>
+    </div>
   );
 };
 

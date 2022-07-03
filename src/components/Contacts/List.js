@@ -6,10 +6,10 @@ const List = () => {
   const contacts = useSelector(contactSelectors.selectAll);
 
   return (
-    <div>
+    <ul className="list">
       {contacts.length > 0 &&
         contacts.map((contact) => <Item key={contact.id} contact={contact} />)}
-    </div>
+    </ul>
   );
 };
 

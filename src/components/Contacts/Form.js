@@ -38,7 +38,9 @@ const Form = () => {
           onChange={(e) => setNumber(e.target.value)}
           placeholder="Phone Number"
         />
-        <button type="submit">Add</button>
+        <div className="btn">
+          <button type="submit">Add</button>
+        </div>
       </form>
     </div>
   );
