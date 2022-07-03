@@ -11,8 +11,6 @@ const Edit = () => {
     contactSelectors.selectById(state, id)
   );
 
-  console.log(contact);
-
   return (
     <div>
       <h1>Edit</h1>
