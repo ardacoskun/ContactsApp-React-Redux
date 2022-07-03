@@ -6,7 +6,7 @@ const Item = ({ contact }) => {
   const dispatch = useDispatch();
 
   const handleDelete = (id) => {
-    if (window.confirm("Are you sure ?")) {
+    if (window.confirm("Are you sure want to delete this contact ?")) {
       dispatch(deleteContact(id));
     }
   };

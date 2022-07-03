@@ -77,3 +77,13 @@ button {
   padding: 5px;
   cursor: pointer;
 }
+
+.deleteAllBtn {
+  text-align: right;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.deleteAllBtn:hover {
+  text-decoration: underline;
+}
