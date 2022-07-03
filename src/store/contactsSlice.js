@@ -13,8 +13,9 @@ export const contactsSlice = createSlice({
   reducers: {
     addContact: contactsAdapter.addOne,
     addContacts: contactsAdapter.addMany,
+    deleteContact: contactsAdapter.removeOne,
   },
 });
 
-export const { addContact, addContacts } = contactsSlice.actions;
+export const { addContact, addContacts, deleteContact } = contactsSlice.actions;
 export default contactsSlice.reducer;
