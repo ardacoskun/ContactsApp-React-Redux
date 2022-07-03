@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import EditForm from "./EditForm";
 import { useSelector } from "react-redux";
 import { contactSelectors } from "../../store/contactsSlice";
@@ -14,6 +14,9 @@ const Edit = () => {
   return (
     <div>
       <h1>Edit</h1>
+      <div className="editHomeBtn">
+        <Link to="/">Back to Contacts</Link>
+      </div>
       <EditForm contact={contact} />
     </div>
   );
