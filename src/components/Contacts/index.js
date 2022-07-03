@@ -6,8 +6,8 @@ const Contacts = () => {
   return (
     <div id="container">
       <h1>Contacts</h1>
-      <Form />
       <List />
+      <Form />
     </div>
   );
 };
