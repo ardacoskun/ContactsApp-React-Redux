@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, useParams, Navigate } from "react-router-dom";
 import EditForm from "./EditForm";
 import { useSelector } from "react-redux";
 import { contactSelectors } from "../../store/contactsSlice";
@@ -10,6 +10,10 @@ const Edit = () => {
   const contact = useSelector((state) =>
     contactSelectors.selectById(state, id)
   );
+
+  if (!contact) {
+    return <Navigate to="/" />;
+  }
 
   return (
     <div>
