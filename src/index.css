@@ -90,5 +90,11 @@ button {
 
 .edit span {
   margin: 0 10px;
+  font-size: 15px;
   cursor: pointer;
+}
+
+.edit a {
+  color: inherit;
+  text-decoration: none;
 }

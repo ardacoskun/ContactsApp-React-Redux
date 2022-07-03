@@ -8,11 +8,11 @@ const Contacts = () => {
   const total = useSelector(contactSelectors.selectTotal);
 
   return (
-    <div id="container">
+    <>
       <h1>Contacts ({total})</h1>
       <List />
       <Form />
-    </div>
+    </>
   );
 };
 

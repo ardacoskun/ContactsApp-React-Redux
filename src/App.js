@@ -6,10 +6,12 @@ import Edit from "./components/Contacts/Edit";
 const App = () => {
   return (
     <div className="app">
-      <Routes>
-        <Route path="/" element={<Contacts />} />
-        <Route path="/edit/:id" element={<Edit />} />
-      </Routes>
+      <div id="container">
+        <Routes>
+          <Route path="/" element={<Contacts />} />
+          <Route path="/edit/:id" element={<Edit />} />
+        </Routes>
+      </div>
     </div>
   );
 };
