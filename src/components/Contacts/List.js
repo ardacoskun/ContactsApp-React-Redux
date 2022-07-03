@@ -6,6 +6,7 @@ import Item from "./Item";
 
 const List = () => {
   const contacts = useSelector(contactSelectors.selectAll);
+  const total = useSelector(contactSelectors.selectTotal);
   const dispatch = useDispatch();
 
   const handleDeleteAll = () => {
@@ -16,9 +17,11 @@ const List = () => {
 
   return (
     <div>
-      <div className="deleteAllBtn" onClick={handleDeleteAll}>
-        Delete All
-      </div>
+      {total > 0 && (
+        <div className="deleteAllBtn" onClick={handleDeleteAll}>
+          Delete All
+        </div>
+      )}
       <ul className="list">
         {contacts.length > 0 &&
           contacts.map((contact) => (
