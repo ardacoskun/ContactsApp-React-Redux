@@ -67,3 +67,13 @@ li {
 button {
   cursor: pointer;
 }
+
+.deleteBtn {
+  width: 18px;
+  height: 22px;
+  background-color: red;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+  cursor: pointer;
+}

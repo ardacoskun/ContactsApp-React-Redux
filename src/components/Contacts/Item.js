@@ -5,6 +5,7 @@ const Item = ({ contact }) => {
     <li>
       <span>{contact.name}</span>
       <span>{contact.phoneNumber}</span>
+      <span className="deleteBtn">x</span>
     </li>
   );
 };
